@@ -10,8 +10,60 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/main.css">
     <style>
-        /* -------------Main---------------- */
-        
+        /* -------------Main block---------------- */
+        div#subMenuBlock{
+            background-color: #c8c10d;
+            height: 100%;
+        }
+        div#subMenuBlock h2{
+            color: #fff;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            font-size: 24pt;
+            line-height: 20pt;
+            padding: 28px 0;
+            margin: 0;
+        }
+        #fan{
+            background-color: #efefef;
+        }
+        #fan img{
+            width: 100%;
+        }
+        aside{
+            background-color: #efedee;
+        }
+        #content main{
+            padding-left: 40px;
+        }
+        #content{
+            padding: 40px;
+        }
+        #content aside{
+            padding: 50px 40px;
+            text-align: center;
+        }
+        #content h3 {
+            font-size: 20pt;
+            color: #cb3362;
+            font-family: 'Lato', sans-serif;
+            line-height: 2em;
+        }
+        #content p, #content a{
+            font-size: 14pt;
+            font-family: 'Roboto', sans-serif;
+            line-height: 2em;
+            color: #7a6666;
+        }
+        #content a{
+            text-decoration: underline;
+        }
+        #content a::selection{
+            color: #c8c10d;
+        }
+        #content main>*,#content aside>*{
+            margin-bottom: 30px;
+        } 
     </style>
 </head>
 <body>
@@ -43,11 +95,56 @@
             </div>
         </header>
     </div>
-    <main class="container">
-        <div class="row">
-            
+    <div class="container-fluide" id="subMenuBlock">
+        <div class="container">
+            <div class="row">
+                <h2 class="col-xl-12">ABOUT</h2>
+            </div>
         </div>
-    </main>
+    </div>
+    <div class="container-fluide" id="fan">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <img src="../img/fanBg.png" alt="Ice cream">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="content">
+        <div class="row align-items-start flex-lg-row flex-column-reverse">
+            <aside class="col-xl-4 col-lg-4 col-md-12">
+                <h3>BE PART OF OUR COMMUNITY</h3>
+                <p>If you're experiencing issues and concerns about this website template, join the discussion on <a href="#">our forum</a> and meet other people in the community who share the same interests with you.</p>
+            </aside>
+            <main class="col-xl-8 col-lg-8 col-md-12">
+                <article>
+                    <h3>WE HAVE FREE TEMPLATES FOR EVERYONE</h3>
+                    <section>
+                        <p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What's more, they're absolutely free! You can do a lot with them. You can modify them.</p>
+                        <p>You can use them to design websites for clients, so long as you agree with the <a href="#">Terms of Use</a>. You can even remove all our links if you want to.</p>
+                    </section>
+                </article>
+                <article>
+                    <h3>WE HAVE MORE TEMPLATES FOR YOU</h3>
+                    <section>
+                        <p>Looking for more templates? Just browse through all our <a href="#">Free Website Templates</a> and find what you're looking for. But if you don't find any website template you can use, you can try our <a href="#">Free Web Design</a> service and tell us all about it. </p>
+                        <p>Maybe you're looking for something different, something special. And we love the challenge of doing something different and something special.</p>
+                    </section>
+                </article>
+                <article>
+                    <h3>TEMPLATE DETAILS</h3>
+                    <section>
+                        <p>Version 2<br>
+                            Website Template details, discussion and updates for this <a href="#">Freeeze Template</a>.<br>
+                            Website Template design by <a href="#">Free Website Templates</a>.</p>
+                        <p>Please feel free to remove some or all the text and links of this page and replace it with your own ABout content.</p>
+                    </section>
+                </article>
+            </main>
+
+        </div>
+    </div>
     <div class="container-fluide" id="footer-bg">
         <footer class="container">
             <div  class="row">
