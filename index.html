@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freeeze</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <div class="container-fluide bg-header">
+        <header class="container">
+            <div class="row align-items-center ">
+                <h1 class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-5">Freee<span>z</span>e<img src="img/logo-e.svg" alt="Marks"></h1>
+                <nav class="navbar navbar-expand-md col-xl-7 offset-xl-2 col-lg-9  col-md-9 col-sm-7 col-7 ">
+                    <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="d-flex justify-content-between   navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#" id="selected">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">ABOUT</a>
+                                <ul>
+                                    <li class="nav-item"><a class="nav-link" href="#">PRODUCTS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">BLOG</a>
+                                <ul>
+                                    <li class="nav-item"><a class="nav-link" href="#">SINGLE POST</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                        </ul>
+                    </div>  
+                </nav>
+            </div>
+        </header>
+    </div>
+    <main class="container">
+        <div class="row">
+            <div id="prew" class="col-xl-12">
+                <img src="img/row1-bg.png" alt="Ice cream">
+                <div id="ellipse1">
+                    <span>FREEZE DELIGHT</span> 
+                </div>
+                <div id="ellipse2"></div>
+            </div>
+        </div>
+    </main>
+    <div class="container-fluide" id="featured">
+        <div class="container">
+            <div  class="row align-items-end">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                    <p>NEW PRODUCT</p>
+                    <p>The Twist of Healthy Yogurt</p>
+                    <p>This website template has been designed by freewebsitetemplates.com for you, for free. You can replace all this text with your own text. </p>
+                </div>
+                <img src="./img/featured.png" alt="Ice cream" class="col-xl-4 col-lg-4 col-md-4 offset-md-0 col-sm-8 offset-sm-2 col-8 offset-2">
+            </div>
+        </div>
+    </div>    
+    <div class="container-fluide" id="bannerHighlights">
+        <div class="container">
+            <div  class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <a href="#">
+                        <i class="demo-icon icon-products"></i><br>
+                        <span>PRODUCTS</span>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <a href="#">
+                        <i class="demo-icon icon-story"></i><br>
+                        <span>OUR STORY</span>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <a href="#">
+                        <i class="demo-icon icon-flavors"></i><br>
+                        <span>FLAVORS</span>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <a href="#">
+                        <i class="demo-icon icon-location"></i><br>
+                        <span>OUR LOCATION</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluide" id="footer-bg">
+        <footer class="container">
+            <div  class="row">
+                <div class="col-xl-12">
+                    <a href="#"><i class="demo-icon icon-facebook-squared"></i></a>
+                    <a href="#"><i class="demo-icon icon-twitter-squared"></i></a>
+                    <a href="#"><i class="demo-icon  icon-instagram"></i></a>
+                    <a href="#"><i class="demo-icon  icon-pinterest-squared"></i></a>
+                    <p>&copy; 2023 <a href="#">Freeeze.</a> All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div> 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nav-button').on('click', function () {
+                $('.animated-icon').toggleClass('open');
+            });
+        });
+    </script>
+</body>
+</html>
