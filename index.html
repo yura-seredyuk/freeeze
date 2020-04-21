@@ -9,6 +9,82 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* -------------Main container---------------- */
+        #prew>img{
+            width: 100%;
+            position: relative;
+        }
+        #ellipse1, #ellipse2{
+                border-radius: 50%;
+                opacity: 0.8;
+                position: absolute;
+                width: 143px;
+                height: 143px;
+        }
+        #ellipse1{
+            background-color: #ca0d6f;
+            z-index: 3;
+            left: 835px;
+            top: 475px;
+            color: white;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            font-size: 18pt;
+            text-align: center;
+            display: flex;
+            align-items: center;    
+        }
+        #ellipse1>span{display: block;}
+        #ellipse2{
+            background-color: #c8c10d;
+            z-index: 2;
+            left: 825px;
+            top: 485px;
+        }
+        #featured{
+            background-color: #eae7e8;
+        }
+        #featured .row>div{
+            padding: 40px;
+        }
+        #featured .row>div p:nth-child(1){
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            font-size: 16pt;
+            color: #7a6666;
+        }
+        #featured .row>div p:nth-child(2){
+            font-family: 'Magra', sans-serif;
+            font-weight: bold;
+            font-size: 24pt;
+            color: #e32a62;
+        }
+        #featured .row>div p:nth-child(3){
+            font-family: 'Roboto', sans-serif;
+            font-size: 13pt;
+            color: #7a6666;
+        }
+        #bannerHighlights{
+            background-color: #c8c10d;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            font-size: 18pt;
+            line-height: 2.5em;
+        }
+        #bannerHighlights a{
+            color: white;
+            padding: 37px;
+            display: block;
+        }
+
+        #bannerHighlights i{
+            font-size: 30pt;
+        }
+        .icon-story{
+            margin-left: -30pt;
+        }
+    </style>
 </head>
 <body>
     <div class="container-fluide bg-header">
@@ -22,7 +98,7 @@
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="d-flex justify-content-between   navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="#" id="selected">HOME</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">ABOUT</a>
+                            <li class="nav-item"><a class="nav-link" href="./pages/about.html">ABOUT</a>
                                 <ul>
                                     <li class="nav-item"><a class="nav-link" href="#">PRODUCTS</a></li>
                                 </ul>
@@ -105,6 +181,7 @@
             </div>
         </footer>
     </div> 
+    <!-- -----------------Burger menu script----------------------- -->
     <script type="text/javascript">
         $(document).ready(function () {
             $('.nav-button').on('click', function () {

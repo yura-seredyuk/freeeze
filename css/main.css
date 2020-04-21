@@ -11,10 +11,48 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?59170217');
+    src: url('../font/fontello.eot?59170217#iefix') format('embedded-opentype'),
+         url('../font/fontello.woff2?59170217') format('woff2'),
+         url('../font/fontello.woff?59170217') format('woff'),
+         url('../font/fontello.svg?59170217#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}   
+.icon-flavors:before { content: '\e800';}
+.icon-products:before { content: '\e801';}
+.icon-story:before { content: '\e802'; }
+.icon-location:before { content: '\e803';}
+.icon-pinterest-squared:before { content: '\f0d3';}
+.icon-twitter-squared:before { content: '\f304';} 
+.icon-facebook-squared:before { content: '\f308';}
+.icon-instagram:before { content: '\f32d';}
+
 body{
     background-color: #f8f8f8;
     min-width: 480px;
 }
+
+/* -------------Header---------------- */
+
 .bg-header .row{
     padding: 15px;
 }
@@ -35,6 +73,9 @@ body{
     left: 150px;
     width: 20pt;
 }
+
+/* -------------Navigate---------------- */
+
 .animated-icon{
     width: 30px;
     height: 20px;
@@ -113,7 +154,7 @@ body{
 }
 .bg-header ul li ul{
     position: absolute;
-    top: 100%;
+    top: 50%;
     z-index: 10;
     display: none;
 }
@@ -131,113 +172,7 @@ body{
 #selected{
     color: #cb3362;
 }
-
-#prew>img{
-    width: 100%;
-    position: relative;
-}
-#ellipse1, #ellipse2{
-        border-radius: 50%;
-        opacity: 0.8;
-        position: absolute;
-        width: 143px;
-        height: 143px;
-}
-#ellipse1{
-    background-color: #ca0d6f;
-    z-index: 3;
-    left: 835px;
-    top: 475px;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    font-size: 18pt;
-    text-align: center;
-    display: flex;
-    align-items: center;    
-}
-#ellipse1>span{display: block;}
-#ellipse2{
-    background-color: #c8c10d;
-    z-index: 2;
-    left: 825px;
-    top: 485px;
-}
-#featured{
-    background-color: #eae7e8;
-}
-#featured .row>div{
-    padding: 40px;
-}
-#featured .row>div p:nth-child(1){
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 16pt;
-    color: #7a6666;
-}
-#featured .row>div p:nth-child(2){
-    font-family: 'Magra', sans-serif;
-    font-weight: bold;
-    font-size: 24pt;
-    color: #e32a62;
-}
-#featured .row>div p:nth-child(3){
-    font-family: 'Roboto', sans-serif;
-    font-size: 13pt;
-    color: #7a6666;
-}
-#bannerHighlights{
-    background-color: #c8c10d;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 18pt;
-    line-height: 2.5em;
-}
-#bannerHighlights a{
-    color: white;
-    padding: 37px;
-    display: block;
-}
-@font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.eot?59170217');
-    src: url('../font/fontello.eot?59170217#iefix') format('embedded-opentype'),
-         url('../font/fontello.woff2?59170217') format('woff2'),
-         url('../font/fontello.woff?59170217') format('woff'),
-         url('../font/fontello.svg?59170217#fontello') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-[class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
-    margin-right: .2em;
-    text-align: center;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1em;
-    margin-left: .2em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}   
-.icon-flavors:before { content: '\e800';}
-.icon-products:before { content: '\e801';}
-.icon-story:before { content: '\e802'; }
-.icon-location:before { content: '\e803';}
-.icon-pinterest-squared:before { content: '\f0d3';}
-.icon-twitter-squared:before { content: '\f304';} 
-.icon-facebook-squared:before { content: '\f308';}
-.icon-instagram:before { content: '\f32d';}
-#bannerHighlights i{
-    font-size: 30pt;
-}
-.icon-story{
-    margin-left: -30pt;
-}
+/* -------------Footer---------------- */
 #footer-bg{
     background-color: #cb3362;
     text-align: center;
@@ -340,11 +275,11 @@ footer p{
         width: 13pt;
     }
     #ellipse1{
-        left: 350px;
+        left: 72%;
         top: 185px;
     }
     #ellipse2{
-        left: 340px;
+        left: 70%;
         top: 190px;
     }
 }
