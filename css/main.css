@@ -284,11 +284,11 @@ footer p{
 }
 @media (max-width:480px){
     .bg-header h1{
-        font-size: 18pt;
+        font-size: 16pt;
     }
     .bg-header img{
         top:-3px;
-        left: 97px;
+        left: 87px;
         width: 10pt;
     }
 }
