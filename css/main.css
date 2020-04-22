@@ -48,7 +48,6 @@
 
 body{
     background-color: #f8f8f8;
-    /* min-width: 480px; */
 }
 
 /* -------------Header---------------- */
@@ -281,5 +280,15 @@ footer p{
     #ellipse2{
         left: 70%;
         top: 190px;
+    }
+}
+@media (max-width:480px){
+    .bg-header h1{
+        font-size: 18pt;
+    }
+    .bg-header img{
+        top:-3px;
+        left: 97px;
+        width: 10pt;
     }
 }
