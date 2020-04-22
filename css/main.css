@@ -291,4 +291,10 @@ footer p{
         left: 87px;
         width: 10pt;
     }
+    .bg-header header{
+        padding: 0 !important;
+    }
+    .bg-header header nav{
+        padding-left: 0 !important;
+    }
 }
